@@ -2,19 +2,18 @@ function calculateBMI(){
     
     makeTagInvisible();
 
-    let height = document.getElementById("height").value;
+    let height = document.getElementById("height").valueAsNumber;
+    let weight = document.getElementById("weight").valueAsNumber;
 
-    if(!parseFloat(height) || height <= 0 || isNaN(height)){
+    if(height <= 0 || isNaN(height)){
         alert("Type a valid number!!");
         document.getElementById("result").style.display = "none";
         changeBackgroundColor(0);
         clearFields();
         return;
     }
-    
-    let weight = document.getElementById("weight").value;
 
-    if(!parseFloat(weight) || weight <= 0 || isNaN(weight)){
+    if(weight <= 0 || isNaN(weight)){
         alert("Type a valid value!!");
         document.getElementById("result").style.display = "none";
         changeBackgroundColor(0);
