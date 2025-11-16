@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container mt-4">
-        <div class="card card-body bg-light">
-            <h1>Welcome to the BMI calculator!!</h1>
-            
+        <div class="card card-body " id="changeColor">
+            <h1 class="text-white">Welcome to the BMI calculator!!</h1>
+
             <div class="form">
                 <form action="">
                     <div class="form-control ">
-                        
-                        <div class="text-center ">
-                        <label class="mt-2" for="height">Height (m):</label> 
-                        <input type="text" id="height" placeholder="">
-                        
-                        <br>
-                        <label class="mt-3" for="weight">Weight (kg):</label> 
-                        <input type="text" id="weight" placeholder="">
-                        <br>
-                        <input class="mt-3 btn btn-primary" type="button" value="Send" onclick="calculateBMI()" >
-                        
-                        <br>
-                        <h2 class="" id="result" style="display: none;" > </h2>
-                        <br>
 
+                        <div class="text-center box">
+                            <label class="mt-2" for="height">Height (m):</label>
+                            <input type="text" id="height" placeholder="">
+
+                            <br>
+                            <label class="mt-3" for="weight">Weight (kg):</label>
+                            <input type="text" id="weight" placeholder="">
+                            <br>
+                            <input class="mt-3 btn btn-primary" type="button" value="Send" onclick="calculateBMI()">
+
+                            <br>
+                            <h2 class="" id="result" style="display: none;"> </h2>
+                            <br>
+                            <!--
                         <h3 id="title" style="display: none;">But... what does this mean?</h3>
                         <p id="msg1" style="display: none;">You are underweight!!</p>
                         <p id="msg2" style="display: none;">You are in a normal weight!!</p>
                         <p id="msg3" style="display: none;">You are overweight!!</p>
                         <p id="msg4" style="display: none;">You are classified as obese!!</p>
-                        </div>
-                        
+                        </div>-->
 
-                    </div>
+
+                        </div>
 
                 </form>
             </div>
-        
+
+            <div class="text-center mt-2 text-white">
+            <h3 id="title" style="display: none;">But... what does this mean?</h3>
+            <p id="msg1" style="display: none;">You are underweight!!</p>
+            <p id="msg2" style="display: none;">You are in a normal weight!!</p>
+            <p id="msg3" style="display: none;">You are overweight!!</p>
+            <p id="msg4" style="display: none;">You are classified as obese!!</p>
+            </div>
         </div>
+
+    </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
