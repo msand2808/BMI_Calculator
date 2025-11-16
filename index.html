@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="container mt-4">
-        <div class="card card-body">
+        <div class="card card-body bg-light">
             <h1>Welcome to the BMI calculator!!</h1>
             
             <div class="form">
                 <form action="">
-                    <div class="form-control">
+                    <div class="form-control ">
                         
-                        <div class="text-center">
+                        <div class="text-center ">
                         <label class="mt-2" for="height">Height (m):</label> 
                         <input type="text" id="height" placeholder="">
                         
@@ -29,9 +29,11 @@
                         <h2 class="" id="result" style="display: none;" > </h2>
                         <br>
 
-                        <h3 class="title">But, what does this mean?</h3>
-                        <p class="">hello</p>
-
+                        <h3 id="title" style="display: none;">But... what does this mean?</h3>
+                        <p id="msg1" style="display: none;">You are underweight!!</p>
+                        <p id="msg2" style="display: none;">You are in a normal weight!!</p>
+                        <p id="msg3" style="display: none;">You are overweight!!</p>
+                        <p id="msg4" style="display: none;">You are classified as obese!!</p>
                         </div>
                         
 
