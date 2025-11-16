@@ -7,6 +7,7 @@ function calculateBMI(){
     if(!parseFloat(height) || height <= 0 || isNaN(height)){
         alert("Type a valid number!!");
         document.getElementById("result").style.display = "none";
+        changeBackgroundColor(0);
         clearFields();
         return;
     }
@@ -16,6 +17,7 @@ function calculateBMI(){
     if(!parseFloat(weight) || weight <= 0 || isNaN(weight)){
         alert("Type a valid value!!");
         document.getElementById("result").style.display = "none";
+        changeBackgroundColor(0);
         clearFields();
         return;
     }
@@ -34,7 +36,7 @@ function calculateBMI(){
         document.getElementById("title").style.display = "block";
         document.getElementById("msg2").style.display = "block";
         changeBackgroundColor(2);
-    } else if(bmi >= 25 && bmi < 29.9){
+    } else if(bmi >= 25 && bmi < 30){
         document.getElementById("title").style.display = "block";
         document.getElementById("msg3").style.display = "block";
         changeBackgroundColor(3);
