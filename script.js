@@ -2,7 +2,7 @@ function calculateBMI(){
     
     makeTagInvisible();
 
-    let height = document.getElementById("height").valueAsNumber;
+    let height = document.getElementById("height").valueAsNumber / 100;
     let weight = document.getElementById("weight").valueAsNumber;
 
     if(height <= 0 || isNaN(height)){
