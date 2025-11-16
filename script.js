@@ -1,15 +1,29 @@
 function calculateBMI(){
+
+    makeTagInvisible();
+
     let height = document.getElementById("height").value;
 
     if(!parseFloat(height)){
-        alert("Write a valid number")
+        alert("Type a valid number!!");
+        document.getElementById("result").style.display = "none";
         return;
     }
     
     let weight = document.getElementById("weight").value;
 
-    console.log(weight);
+    if(!parseFloat(weight)){
+        alert("Type a valid value!!");
+        document.getElementById("result").style.display = "none";
+        return;
+    }
 
-    document.getElementById("msg").style.display = "block";
+    const bmi = (weight / (height * height)).toFixed(2);
     
+    document.getElementById("result").textContent = `Your BMI is: ${bmi}`;
+    document.getElementById("result").style.display = "block";
+}
+
+function makeTagInvisible(){
+    //document.getElementById("msg").style.display = "none";
 }
